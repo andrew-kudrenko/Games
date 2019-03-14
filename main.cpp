@@ -6,13 +6,12 @@
 #include "Map.h"
 #include "Ground.h"
 #include "Tubes.h"
-#include "Game.h"
+
 using namespace sf;
 using namespace std;
 
 int main() 
 {
-	/*
 	GameInfo::scores = 0;
 	int windowWidth = 1920, windowHeight = 1080;
 	RenderWindow window(VideoMode(windowWidth, windowHeight), "Flappy Bird");
@@ -29,8 +28,7 @@ int main()
 	Tubes tube(80, 412, "tubeUp.png", "tubeDown.png");
 	bool aGame = true;
 	window.setVerticalSyncEnabled(true);
-	*/
-	/*
+
 	while (window.isOpen()) 
 	{
 		Event event;
@@ -64,10 +62,8 @@ int main()
 		{
 			break; 
 		}
-		cout << GameInfo::scores << "|\t\t|" << bird.getCoords().x << "|\t\t|" << bird.getPush() << endl;
+		//cout << GameInfo::scores << "|\t\t|" << bird.getCoords().x << "|\t\t|" << bird.getPush() << endl;
 	}
-	*/
-	Game play;
-	play.game();
+	
 	return 0;
 }
